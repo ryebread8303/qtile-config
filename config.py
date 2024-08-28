@@ -86,6 +86,7 @@ keys = [
     Key([mod, "control"], "r", lazy.reload_config(), desc="Reload the config"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
     Key([mod], "d", lazy.spawn("rofi -show drun"), desc="Spawn a command using a prompt widget"),
+    Key([mod], "p", lazy.spawn('rofi -show power-menu -modi "power-menu:rofi-power-menu --choices=lockscreen/logout/shutdown/reboot"'), desc="Spawn the power menu")
 ]
 
 # Add key bindings to switch VTs in Wayland.
